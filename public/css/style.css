@@ -1,0 +1,44 @@
+body{
+    color: #333333;
+    font-family: arial;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+align-items: center;
+min-height: 100vh;
+}
+
+ul{
+    display: flex;
+
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 15px;
+}
+li a{
+    text-decoration: none;
+
+}
+img{
+    flex-grow: 0;
+    width: 500px;
+}
+
+h1{
+    color: aqua;
+}
+
+input{
+    border: 1px solid lightgray;
+    padding: 8px;
+
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    color: maroon;
+}
