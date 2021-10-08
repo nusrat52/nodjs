@@ -8,7 +8,7 @@ const HowIsWeather = require("./utils/howIsWeather");
 const publicFolder = path.join(__dirname, "../public");
 const viewDir = path.join(__dirname, "../tempelates/views");
 const partialDir = path.join(__dirname, "../tempelates/partials");
-
+const port=process.env.PORT || 3000
 // config for static folder
 app.use(express.static(publicFolder));
 //  config for handlebars and views location
@@ -80,6 +80,6 @@ app.get("*", (req, res) => {
   res.render("error", { errorMessage: "Umumiyyetle yoxdyu bele bii sohbet" });
 });
 
-app.listen(3000, () => {
-  console.log("express ishe dusdu");
+app.listen(port, () => {
+  console.log("express ishe dusdu in "+port);
 });
